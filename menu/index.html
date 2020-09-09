@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript puro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">Danki Code</a> </div>
+        <div class="icon-menu"><i class="fas fa-bars"></i></div>
+        <div id="menu" class="menu hide">
+            <a href="#">Home</a>
+            <br>
+            <a href="#">Sobre</a>
+            <br>
+            <a href="#">Contato</a>
+            <!--Menu-->
+        </div>
+    </header>
+
+    <script src="js/all.min.js"></script>
+    <script>
+        var iconMenu = document.querySelectorAll('.icon-menu');
+
+        iconMenu[0].addEventListener('click',()=>{
+            //Efeitos de opacidade.
+            /*
+            let menu = document.getElementById('menu');
+            if(menu.classList.contains('hide')){
+                menu.classList.add('show');
+                menu.classList.remove('hide')
+            }else{
+                menu.classList.add('hide');
+                menu.classList.remove('show');
+            }
+            */
+            //Efeitos de toggle.
+            let menu = document.getElementById('menu');
+            if(menu.classList.contains('hide')){
+                menu.classList.add('show');
+                menu.classList.remove('hide')
+            }else{
+                menu.classList.add('hide');
+                menu.classList.remove('show');
+            }
+            
+        });
+            
+
+    </script>
+</body>
+</html>
